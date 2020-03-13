@@ -16,4 +16,21 @@ router.post("/users", (req, res) => {
     })
 })
 
+router.put("/users/:id", (req, res) => {
+  User.findByIdAndUpdate({_id: req.params.id}, req.body)
+    .then(() => {
+      User.findOne({_id: req.params.id})
+        .then(user => {
+          res.send(user)
+        })
+    })
+})
+
+
+router.delete("/users/:id", (req, res) => {
+  User.deleteOne({_id: req.params.id})
+    .then(user => {
+      res.send(user)
+    })
+})
 module.exports = router
