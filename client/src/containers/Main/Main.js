@@ -13,9 +13,9 @@ class Main extends Component {
         <BrowserRouter>
           <div className="main-container">
             <div className="main-container__items">
-            <Link to="/login" className="main-container__items__login-button">Login</Link>
-              <p>Or</p>
-            <Link to="/register" className="main-container__items__register-button">Register</Link>
+              <Link to="/login" className="main-container__items__login-button">Login</Link>
+                <p>Or</p>
+              <Link to="/register" className="main-container__items__register-button">Register</Link>
             </div>
           </div>
           <Switch>

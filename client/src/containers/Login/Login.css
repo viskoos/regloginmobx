@@ -1,0 +1,9 @@
+.login-container {
+  max-width: 250px;
+  width: 100%;
+}
+
+.login-container .login-container-items {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
