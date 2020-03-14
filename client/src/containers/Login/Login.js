@@ -1,19 +1,17 @@
 import React, {Component} from 'react'
 import {observer, inject} from 'mobx-react'
-import './App.css'
-
-import Main from './Main/Main'
 
 @inject('store')
 @observer
-class App extends Component {
+class Login extends Component {
   render() {
+    const {} = this.props.store
     return(
       <div>
-        <Main/>
+        Login page
       </div>
     )
   }
 }
 
-export default App
+export default Login

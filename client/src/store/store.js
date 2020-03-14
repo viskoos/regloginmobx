@@ -1,7 +1,6 @@
 import {observable, action} from 'mobx'
 
 class Store {
-  @observable title = 'Hello from MobX'
   @observable users = []
 
   @action.bound viewUsers() {

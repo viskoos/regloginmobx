@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial;
 }
 
 .user-card {
@@ -8,7 +9,6 @@ body {
 }
 
 .user-card-item {
-  font-family: Arial;
   margin-bottom: 10px;
 }
 

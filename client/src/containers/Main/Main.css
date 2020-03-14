@@ -1,0 +1,60 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container .main-container__items {
+  display: grid;
+  grid-template-rows: 25px 40px 25px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #757d77;
+  border-radius: 10px;
+  width: 250px;
+  height: 165px;
+  padding-top: 5%;
+  transition-duration: .3s;
+}
+
+.main-container .main-container__items:hover {
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.43);
+  transition-duration: .6s;
+}
+
+.main-container .main-container__items .main-container__items__login-button{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  border: 1px solid #3dcc63;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  color: #3dcc63;
+  transition-duration: .3s;
+}
+
+.main-container .main-container__items .main-container__items__login-button:hover {
+  background: #3dcc63;
+  color: white;
+  transition-duration: .6s;
+}
+
+.main-container .main-container__items .main-container__items__register-button{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  border: 1px solid #106ca1;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  color: #106ca1;
+  transition-duration: .3s;
+}
+
+.main-container .main-container__items .main-container__items__register-button:hover {
+  background: #106ca1;
+  color: white;
+  transition-duration: .6s;
+}
