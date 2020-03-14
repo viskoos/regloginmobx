@@ -6,11 +6,10 @@ import {observer, inject} from 'mobx-react'
 class App extends Component {
   render() {
 
-    const {title} = this.props.store
+    const {} = this.props.store
 
     return(
       <div>
-        Test
       </div>
     )
   }
