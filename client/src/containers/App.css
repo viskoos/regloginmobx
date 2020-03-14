@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.user-card {
+  border: 1px solid black;
+}
+
+.user-card-item {
+  font-family: Arial;
+  margin-bottom: 10px;
+}
+
+.user-card-item li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: green;
+}
