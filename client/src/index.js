@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
-import DevTools from 'mobx-react-devtools';
+import {Provider} from 'mobx-react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <DevTools />
-        <h1>Hello world!</h1>
-      </div>
-    );
-  }
-}
+import App from './containers/App'
+import {store} from './store/store'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-serviceWorker.unregister();
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+, document.getElementById('root'));
