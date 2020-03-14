@@ -1,3 +1,17 @@
+<h2>To start the server in the root folder, write:</h2>
+<br>
+<p>npm run dev</p>
+<br>
+<p>The server starts on port 5000</p>
+<br>
+<h2>To start the frontend in the client folder, write:</h2>
+<br>
+<p>npm start</p>
+<br>
+<p>The server starts on port 3000</p>
+<br>
+<h2>In order for everything to work correctly, you need to download and install mongodb. Then run it, the server will automatically create the desired base</h2>
+
 Pages:
 <br>
   <ul>
@@ -19,17 +33,3 @@ Stack:
     <li>Mongodb</li>
     <li>Nodejs</li>
   </ul>
-
-<h2>To start the server in the root folder, write:</h2>
-<br>
-<p>npm run dev</p>
-<br>
-<p>The server starts on port 5000</p>
-<br>
-<h2>To start the frontend in the client folder, write:</h2>
-<br>
-<p>npm start</p>
-<br>
-<p>The server starts on port 3000</p>
-<br>
-<h2>In order for everything to work correctly, you need to download and install mongodb. Then run it, the server will automatically create the desired base</h2>
