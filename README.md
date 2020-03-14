@@ -32,3 +32,4 @@ Stack:
 <br>
 <p>The server starts on port 3000</p>
 <br>
+<h2>In order for everything to work correctly, you need to download and install mongodb. Then run it, the server will automatically create the desired base</h2>
