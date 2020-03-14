@@ -6,10 +6,12 @@ import {observer, inject} from 'mobx-react'
 class App extends Component {
   render() {
 
-    const {} = this.props.store
+    const {viewUsers, users} = this.props.store
+    console.log(users)
 
     return(
       <div>
+        <button onClick={viewUsers}>view</button>
       </div>
     )
   }
