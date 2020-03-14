@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {Provider} from 'mobx'
+import * as serviceWorker from './serviceWorker';
+import DevTools from 'mobx-react-devtools';
 
-import App from './containers/App'
-import {store} from './store/store'
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <DevTools />
+        <h1>Hello world!</h1>
+      </div>
+    );
+  }
+}
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
-  // УДАЛИТЬ NODE-SASS(ЕСЛИ НЕ УДАЛИЛСЯ)
-  // ПРОВЕРИТЬ МОБХ
-  // ДВА КОНТЭЙНЕРА ДЛЯ РЕГИ И ЛОГИНА
-  // ПРИХУЯРИТЬ СТИЛИ (ЖЕЛАТЕЛЬНО САССОМ)
-  // ПРОКИНУТЬ ВСЕ ЭТО ДЕЛО ЧЕРЕЗ МОБХ
-  // ПРИХУЯРИТЬ СЕРВЕР
-  // ПАРСИТЬ МОНГОДБ
+serviceWorker.unregister();
